@@ -1,12 +1,12 @@
-const numero = Number(prompt('Digite um número'))
+const alunos = [ 'Luiz', 'Ana', 'Maria']
+alunos.push('Marcia') //adicionando elementos  no final do array
+alunos.push('Marcos') //adicionando elementos  no final do array
+alunos.push('André') //adicionando elementos  no final do array
+alunos.unshift('João')//adicionando elementos  no inicio do array
+alunos.pop()//removendo elementos do final do array
+alunos.shift()//removendo elementos do inicio do array
+//delete alunos[2] // deletando elementos do array, porém permanacendo a sua posição
 
-const numeroTitulo = document.querySelector('#numberTitle');
-const texto = document.querySelector("#texto")
+console.log(alunos.slice(0,3)) //fatiando o array
 
-numeroTitulo.innerHTML = numero
-texto.innerHTML = `<p> Sua raiz quadrada é ${numero ** 0.5}. </p>`;
-texto.innerHTML += `<p> ${numero} é inteiro: ${Number.isInteger(numero)} </p>`;
-texto.innerHTML += `<p> É NaN :${Number.isNaN(numero)}. </p>`;
-texto.innerHTML += `<p> Arredondando para baixo: ${Math.floor(numero)} </p>`;
-texto.innerHTML += `<p> Arredondando para cima. ${Math.ceil(numero)} </p>`;
-texto.innerHTML += `<p> Com duas casas decimais. ${numero.toFixed(2)} </p>`;
+//console.log(alunos)
